@@ -1,11 +1,17 @@
 package com.example.myapplication
-
-import androidx.appcompat.app.AppCompatActivity
+import HomePage
 import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.ui.core.Text
+import androidx.ui.core.setContent
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContent {
+            Text("Hello, World!")
+        }
+
     }
 }

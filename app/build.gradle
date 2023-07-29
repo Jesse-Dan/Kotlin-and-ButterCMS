@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.myapplication'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.myapplication"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -41,11 +41,14 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.10.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0-alpha03'
+
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
     implementation 'androidx.compose.ui:ui-tooling-preview:1.4.3'
     testImplementation 'junit:junit:4.13.2'
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
@@ -56,10 +59,11 @@ dependencies {
     implementation 'androidx.compose.runtime:runtime:1.6.0-alpha02'
 
     implementation "androidx.compose.foundation:foundation:1.4.3"
-    implementation "androidx.compose.setContent:setContent:1.4.3"
 
     implementation "androidx.compose.material:material:1.4.3"
-    implementation 'androidx.ui:ui-layout:0.1.0-dev02'
+    implementation 'androidx.ui:ui-layout:0.1.0-dev14'
+
+    implementation "androidx.navigation:navigation-compose:2.4.0-alpha10"
 
 
 }

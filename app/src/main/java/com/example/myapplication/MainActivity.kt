@@ -1,17 +1,23 @@
 package com.example.myapplication
-import HomePage
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.ui.core.Text
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
 import androidx.ui.core.setContent
+import com.example.myapplication.composable.BuildHomePageView
+
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Text("Hello, World!")
+            MaterialTheme {
+                Surface {
+                    BuildHomePageView()
+                }
+            }
         }
-
     }
 }
+
